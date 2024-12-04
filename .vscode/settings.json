@@ -1,0 +1,4 @@
+{
+    "dotnet.defaultSolution": "CloudSync2.sln",
+    "r.lsp.promptToInstall": false
+}

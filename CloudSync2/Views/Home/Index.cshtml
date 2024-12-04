@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = null; // Add this line
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSync File Upload</title>
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container">
+        <h1>CloudSync File Upload</h1>
+        <div class="upload-area" id="dropZone">
+            <p>Drag & Drop files here or</p>
+            <label for="fileInput" class="file-label">Choose Files</label>
+            <input type="file" id="fileInput" multiple>
+        </div>
+        <div id="fileList" class="file-list"></div>
+        <button id="uploadButton" disabled>Upload Files</button>
+        <div id="status"></div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="~/js/index.js"></script>
+</body>
+</html>
+
